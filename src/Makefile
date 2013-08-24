@@ -21,7 +21,7 @@
 #       David Baumgartner. 
 
 build:
-	cabal install parsec missingh markdown
+	cabal install parsec missingh markdown configfile
 	ghc -o ../erest erest.hs
 
 install:
