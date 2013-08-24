@@ -72,8 +72,8 @@ fInit = do
 		putChar '\n'
 		writeFile (".erest") ("[git]\n"++
 								"user = "++ username ++"\n"++
-								"password "++ password ++"\n"++
-								"repo "++ repurl ++"\n")
+								"password = "++ password ++"\n"++
+								"repo = "++ repurl ++"\n")
 		putStrLn "I saved you datas"
  	else do
 		createDirectoryIfMissing False "www"
@@ -176,6 +176,7 @@ handleArg "generate"	= fGenerate
 handleArg "send"		= fSend
 handleArg "update"		= fUpdate
 handleArg "help"		= fHelp
+handleArg _				= fHelp
 
 main :: IO ()
 main = do
