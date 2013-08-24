@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	!(templates/head.html)
+	<body>
+		<div class="inner" id="header">
+			<div class="pull-left">
+				<h1><a href="/">sempiternas</a></h1>
+				<h2><a href="/">après tout, pourquoi pas ?</a></h2>
+			</div>
+			!(templates/navigation.html)
+		</div>
+		<div class="clearfix">
+		</div>
+		<div class="inner" id="content">
+			<div class="post">
+				<h1 class="title"><a href="#">{{ title }}</a></h1>
+				<p class="date">
+					<span>Publié: </span>{{ datetime }} &mdash; <span>Auteur: </span> {{ author }} &mdash; <span>Étiquettes: </span> {{ tags }}
+				</p>
+				<div class="post-content">
+					{{ content }}
+				</div>
+				<div class="hr"></div>
+				<p><a href="mailto:sempiternas@perdu.com">Une question ? Une remarque ? Appelez nous vite au 71313</a></p>
+			</div>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,302 @@
+/* 
+ * Copyright (c) 2013, Vincent Hourdel <vinz_@smoothirc.net>
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the 
+ * Software is furnished to do so, subject to the following conditions:
+ *   - The above copyright notice and this permission notice shall be 
+ *       included in all copies or substantial portions of the Software.
+ *   - The Software is provided "as is", without warranty of any kind,
+ *       express or implied, including but not limited to the warranties
+ *       of merchantability, fitness for a particular purpose and noninfringement.
+ *       In no event shall the authors or copyright holders X be liable for any
+ *       claim, damages or other liability, whether in an action of contract, tort
+ *       or otherwise, arising from, out of or in connection with the software or
+ *       the use or other dealings in the Software.
+ *   - Except as contained in this notice, the name of the David Baumgartner shall
+ *       not be used in advertising or otherwise to promote the sale, use or other
+ *       dealings in this Software without prior written authorization from the 
+ *       David Baumgartner. 
+ */
+
+
+
+@import url("//fonts.googleapis.com/css?family=Lato:400,400italic");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff;
+	color: #444;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	padding-bottom: 30px;
+}
+
+p {
+	margin: 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+ul { 
+   list-style-type: disc; 
+   list-style-position: outside; 
+   margin-left: 40px;
+   margin-bottom: 5px;
+}
+
+ol { 
+   list-style-type: decimal; 
+   list-style-position: outside;
+   margin-left: 40px;
+   margin-bottom: 5px;
+}
+
+ul ul, ol ul { 
+   list-style-type: circle; 
+   list-style-position: inside; 
+   margin-left: 15px; 
+}
+
+ol ol, ul ol { 
+   list-style-type: lower-latin; 
+   list-style-position: inside; 
+   margin-left: 15px; 
+}
+
+a {
+	text-decoration: none;
+	color: #258fb8;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.inner {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+img[alt^=Center] {
+	display: block;
+	margin: 0 auto;
+}
+
+#header {
+	margin: 50px auto;
+}
+
+#header h1 {
+	font-weight: bold;
+	font-size: 2.5em;
+	line-height: 1;
+}
+
+#header h2 {
+	font-weight: bold;
+	font-size: 0.9em;
+	line-height: 1;
+	margin-top: 5px;
+}
+
+#header h2 a:hover {
+	text-decoration: none;
+}
+
+#header .main-nav {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 2.5em;
+	float: right;
+}
+
+#header .main-nav ul {
+	list-style: none;
+}
+
+#header .main-nav ul li {
+	float: left;
+	margin-left: 30px;
+}
+
+#content {
+	margin-top: 50px;
+}
+
+.post h1.title {
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-decoration: underline;
+}
+
+.post h1.title a {
+	color: #444;
+}
+
+.post h1.title a:hover {
+	color: #258fb8;
+}
+
+.post p.date span {
+	font-size: 10pt;
+	color: #ccc;
+}
+
+.post p.date {
+	font-family: "Lato", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #777;
+	font-size: 10pt;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+.post div.post-content {
+	line-height: 1.6em;
+	text-align: justify;
+	margin-top: 15px;
+}
+
+.post div.post-content pre {
+	background: #eee;
+	border: 1px solid #ddd;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding: 7px 15px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	line-height: 1.6;
+	overflow: auto;
+	font-size: 0.9em;
+}
+
+.post div.post-content pre code {
+	background: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 7px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+code {
+	background: #eee;
+	padding: 0 5px;
+	margin: 0 2px;
+	font-size: 0.9em;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+div.highlight {
+	background: #eee;
+	border: 1px solid #ddd;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 7px 15px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	line-height: 1.6;
+	overflow: auto;
+	font-size: 0.9em;
+}
+
+div.highlight table {
+	margin-top: 0;
+	border-spacing: 0;
+}
+
+div.highlight pre {
+	background: #eee;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+div.highlight table td.gutter {
+	padding-right: 15px;
+	border-right: 1px solid #ddd;
+	text-align: right;
+}
+
+div.highlight table td.code {
+	padding-left: 15px;
+	border-left: 1px solid #fff;
+}
+
+div.hr {
+	border-top: 1px solid #ddd;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+img[alt^=Centre] {
+	display: block;
+	margin: auto;
+}
+
+div.tags ul {
+	margin: 0;
+	padding: 0;
+}
+
+div.tags ul li {
+	margin: 0;
+	padding: 10px 0px 10px 20px;
+	display: block;
+	border-top: solid 1px gray; 
+	border-left: solid 8px white;
+}
+
+div.tags ul li:hover {
+	border-left: solid 8px #FF3399;
+}
+
+div.tags ul li:last-child {
+	border-bottom: solid 1px gray; 
+}
