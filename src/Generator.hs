@@ -64,7 +64,7 @@ mkPostPage ipost = do
 	currentTime <- getCurrentTime
 	post <- ipost
 	content <- renderFile [("title", fromMaybe "A post" $ title post), 
-							("tags", join " " $  map (\a -> "(<a href='"++slugify a++"'>"++a++"</a>)") $ fromMaybe [] $ tags post),
+							("tags", join " " $  map (\a -> "(<a href='/tag/"++slugify a++".html'>"++a++"</a>)") $ fromMaybe [] $ tags post),
 							("datetime", renderDate $ fromMaybe currentTime $ datetime post), 
 							("author", fromMaybe "An author" $ author post),
 							("content", renderMarkdown $ content post)] [] "templates/post.html"
