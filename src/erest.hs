@@ -65,10 +65,9 @@ fInit = do
 		repurl <- getLine 
 		cloned <- readProcessWithExitCode "git" ["clone",repurl,"www"] []
 		putStrLn $ handleGit cloned
-		putStr "Git’ username:"
+		putStrLn "Git’ username:"
 		username <- getLine
-		putChar '\n'
-		putStr "Git’ password:"
+		putStrLn "Git’ password:"
 		password <- getPassword
 		putChar '\n'
 		writeFile (".erest") ("[git]\n"++
