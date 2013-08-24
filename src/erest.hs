@@ -89,7 +89,7 @@ fInit = do
 
 fNew :: IO ()
 fNew = do
-	psts <- getDirectoryContents "source/posts"
+	psts <- getDirectoryContents "www/source/posts"
 	let posts = [x | x <- psts, x !! 0 /= '.']
 	let fname = if length posts > 0 then show ((read (head $ split "." $ last posts) :: Int)+1) ++ ".md" else "1.md"
 	cdir <- getCurrentDirectory
@@ -108,11 +108,11 @@ fNew = do
 	tags <- map strip <$> split "," <$> getLine
 	putStrLn "Who are you ?"
 	author <- getLine
-	writeFile ("source/posts/"++fname) ("title = "++title++"\n"++
+	writeFile ("www/source/posts/"++fname) ("title = "++title++"\n"++
 											"tags = [\""++(join "\", \"" tags)++"\"]\n"++
 											"author = "++author++"\n"++
 											"-----------------")
-	putStrLn $ "Hey ! I'm "++("source/posts/"++fname)
+	putStrLn $ "Hey ! I'm "++("www/source/posts/"++fname)
 
 fGenerate :: IO ()
 fGenerate = do

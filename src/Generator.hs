@@ -102,14 +102,14 @@ mkTagsPages iposts = do
 
 mkAbout :: IO ()
 mkAbout = do 
-	about <- readFile "source/about.md"
+	about <- readFile "www/source/about.md"
 	content <- renderFile [("title", "À propos"), ("content", renderMarkdown about)] [] "templates/about.html"
 	writeFile ("www/about.html") content
 
 generate :: IO ()
 generate = do
-	dir <- getDirectoryContents "source/posts"
-	let posts = map parse ["source/posts/"++x | x <- dir, x !! 0 /= '.']
+	dir <- getDirectoryContents "www/source/posts"
+	let posts = map parse ["www/source/posts/"++x | x <- dir, x !! 0 /= '.']
 	mkTagsPages posts
 	mkPostsPages posts
 	mkAbout
