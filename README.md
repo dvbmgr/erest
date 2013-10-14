@@ -1,6 +1,4 @@
-Erest
-======
-
+# Erest
 A simple blog generator written in Haskell.
 
 Installation
