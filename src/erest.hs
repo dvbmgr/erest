@@ -81,9 +81,9 @@ fInit = do
 	createDirectoryIfMissing False "www/tag"
 	createDirectoryIfMissing False "www/post"
 	createDirectoryIfMissing False "www/static"
-	createDirectoryIfMissing False "source"
-	createDirectoryIfMissing False "source/posts"
-	writeFile "source/about.md" "Hey ! This is a blog which use Erest !"
+	createDirectoryIfMissing False "www/source"
+	createDirectoryIfMissing False "www/source/posts"
+	writeFile "www/source/about.md" "Hey ! This is a blog which use Erest !"
 	copyFile "templates/main.css" "www/static/main.css"
 	putStrLn "There we are !"
 
