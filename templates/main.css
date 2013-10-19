@@ -204,6 +204,7 @@ img[alt^=Center] {
 	font-size: 0.9em;
 }
 
+
 .post div.post-content pre code {
 	background: none;
 	padding: 0;
@@ -218,6 +219,7 @@ blockquote {
 	padding: 0.5em 10px;
 	quotes: "\201C""\201D""\2018""\2019";
 }
+
 
 code {
 	background: #eee;

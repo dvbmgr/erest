@@ -12,6 +12,11 @@ make build
 sudo make install
 ```
 
+License
+---
+Erest is distributed under the MIT license, and makes uses of [highlight.js](http://softwaremaniacs.org/soft/highlight/en/), a JavaScript library which automatically colorates code blocks.
+
+
 Setup
 -----
 
