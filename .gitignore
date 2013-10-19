@@ -2,3 +2,5 @@ erest
 www/
 src/*.hi
 src/*.o
+.erest
+.gitignore
