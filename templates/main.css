@@ -288,6 +288,7 @@ div.tags ul {
 }
 
 div.tags ul li {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 10px 0px 10px 20px;
 	display: block;
