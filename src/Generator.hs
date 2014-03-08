@@ -44,7 +44,7 @@ renderMarkdown :: String -> String
 renderMarkdown = replace "'" "&rsquo;" . replace "..." "&hellip;" . replace "--" "&ndash;" . replace "---" "&mdash;" . T.unpack . renderHtml . markdown def . T.pack
 
 renderDate :: UTCTime -> String
-renderDate = formatTime defaultTimeLocale "%m/%d/%Y"
+renderDate = formatTime defaultTimeLocale "%d/%m/%Y"
 
 sortPosts a = reverse a 
 
